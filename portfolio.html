@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/common.css?v=2">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500&display=swap">
     <script type="text/javascript" src="JS/common.js"></script>
+    <script type="text/javascript" src="JS/Base.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,9 +16,6 @@
     </div>
     <div>
         <div id="port-menu">
-            <div>
-                <img src="img/pinga.jpg" id="img_pinga">
-            </div>
             <div id="m_home" onclick="move_event('s_home')">
                 <div>Home</div>
             </div>
@@ -43,10 +41,20 @@
                     <div>Introduce</div>
                 </div>
                 <div>
-                    <div>introduce myself</div>
+                    <div>
+                        <h1>어제보다 나은 개발자</h1><br>
+                        중학생때 처음으로 html이라는 언어를 접한 뒤로 혼자서 html에 쓰이는 여러 태그들을 공부하면서 컴퓨터 언어에 대한 흥미를 키워나갔습니다. 
+                        고등학교때 진로를 고민하던 중 어렸을 적 가장 큰 호기심과 흥미를 느꼈던 개발자의 길이 나의 길이다라는것을 느꼈고 관련 학과에 진학하게 되었습니다. 
+                        멀티미디어공학을 전공하면서 C언어, java, Oracle, Matlab등을 전공으로 공부하였고, 개인적으로 흥미를 느꼈던 게임개발 분야에 대해 알아보면서 
+                        Unity나 Android등을 접하며 이 분야의 깊이와 가능성에 매력을 느끼게 되어 앞으로 더 나은 개발자가 되고자 노력하고 있습니다.<br><br>
+
+                        저의 목표는 어제보다 나은 개발자로써, 경력의 연차를 쌓는것이 아닌 나의 경험과, 공부와, 지식을 쌓아올려 더 높은곳을 향해 나아가고 
+                        쌓아올린 토대를 바탕으로 어제 올려다 보지 못한 목표를 올려다 볼 수 있는, 앞으로 나아가는 개발자가 되고자 합니다.
+                    </div>
                 </div>
             </div>
             <div id="s_skills">
+                <div id="skills_title">WEB SKILLS</div>
                 <div id="web_skills">
                     <div class="skills">
                             <div class="skill_title">
@@ -81,6 +89,7 @@
                         </div>
                     </div>
                 </div>
+                <div id="skills_title">LANGUAGE</div>
                 <div id="lang_skills">
                     <div class="skills">
                             <div class="skill_title">
@@ -115,6 +124,7 @@
                         </div>
                     </div>
                 </div>
+                <div id="skills_title">DB</div>
                 <div id="db_skills">
                     <div class="skills">
                         <div class="skill_title">
@@ -133,6 +143,7 @@
                         </div>
                     </div>
                 </div>
+                <div id="skills_title">ETC</div>
                 <div id="fw_skills">
                     <div class="skills">
                         <div class="skill_title">
@@ -145,7 +156,22 @@
                 </div>
             </div>
             <div id="s_projects">
-                <div>여기는 프로젝트가 들어갈 자리입니다</div>
+                <div onclick="location.href='https://github.com/AngelofLoveS2/APM_Setup'">
+                    <div><img src="img/namegen.png" id="nameimg"></div>
+                    <div>
+                        <h2>NameGen</h2><br>
+                        개발기간 : 2019.5.24 ~ 2019 7. 6<br><br>
+                        
+                        php, js, css를 기반으로 만든 자신의 이름, 나이등의 정보를 기반으로 자신만의 이미지를 만들어주는 웹 페이지.<br>
+                        <img src="img/git.png" id="gitimg">
+                    </div>
+                </div>
+                <!--<div>
+                    <h2>아직 빈 공간입니다. 곧 채워나갈 예정입니다.</h2>
+                </div>
+                <div>
+                    <h2>아직 빈 공간입니다. 곧 채워나갈 예정입니다.</h2>
+                </div>-->
             </div>
             <div id="s_contact">
                 <div>How to contact</div>

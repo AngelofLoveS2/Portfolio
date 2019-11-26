@@ -8,7 +8,6 @@ html, body{
     to {opacity:0.8;}
 }
 
-
 body{
     max-width: 100%;
     display:flex;
@@ -16,6 +15,7 @@ body{
     font-family:'Noto Sans KR',sans-serif;
     font-size:2vw;
     font-weight:300;
+    user-select: none;
 }
 
 body>div:first-child{
@@ -114,7 +114,7 @@ body>div:last-child{
 
 
 #port-section>#s_introduce{
-    height:25vh;
+    height:50vh;
     background-color:rgb(255, 255, 255);
     display:flex;
     flex-direction: row;
@@ -136,11 +136,16 @@ body>div:last-child{
     justify-content: center;
     align-items: center;
 }
-
+#s_introduce>div:last-child>div{
+    font-size:1vw;
+}
+#s_introduce>div:last-child>div>h1{
+    margin-top:0px;
+}
 
 
 #port-section>#s_skills{
-    height:140vh;
+    height:100vh;
     background-color: rgb(189, 189, 255);
     flex-direction: row;
     display: flex;
@@ -148,21 +153,24 @@ body>div:last-child{
     justify-content: center;
     align-items: center;
 }
-
-#port-section>#s_skills>div{
-    height:20vh;
-    width:50vw;
+#port-section>#s_skills>div:nth-child(odd){
+    height:2.5vh;
+    width:40vw;
+    font-size:1.2vw;
+    margin-bottom:1vw;
+    text-align: center;
+    color:white;
+}
+#port-section>#s_skills>div:nth-child(even){
+    height:16vw;
+    width:40vw;
     background-color: rgb(179, 179, 255);
     display: flex;
     flex-direction : row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10vh;
-    border: 2px solid rgb(120, 120, 120);
-    border-radius: 5vh;
-}
-#port-section>#s_skills>div:last-child{
-    margin-bottom: 0;
+    margin-bottom: 2vw;
+    border-radius: 4vw;
 }
 
 #port-section>#s_skills>div>.skills:not(:last-child){
@@ -170,9 +178,9 @@ body>div:last-child{
 }
 
 #port-section>#s_skills>div>.skills>.skill_title{
-    height:6vw;
-    width:6vw;
-    border-radius: 1.5vw;  
+    height:5vw;
+    width:5vw;
+    border-radius: 1.2vw;  
     position: absolute;
     display: flex;
     justify-content: center;
@@ -190,16 +198,16 @@ body>div:last-child{
 }
 
 .skill_img_div{
-    height:6vw;
-    width:6vw;
-    border-radius: 1.5vw; 
+    height:5vw;
+    width:5vw;
+    border-radius: 1.2vw; 
     z-index: 2;
 }
 
 .skill_img{
-    height:6vw;
-    width:6vw;
-    border-radius: 1.5vw;  
+    height:5vw;
+    width:5vw;
+    border-radius: 1.2vw;  
     object-fit: cover;  
     position: absolute;
 }
@@ -208,7 +216,42 @@ body>div:last-child{
 #port-section>#s_projects{
     height:100vh;
     background-color: rgb(96, 125, 255);
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
+#port-section>#s_projects>div{
+    height:35%;
+    width:80%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border:1px solid white;
+    background-color: white;
+    margin: 1vh 0;
+}
+#port-section>#s_projects>div>div:first-child{
+    height:100%;
+    width:40%;
+}
+#nameimg{
+    height:100%;
+    width:100%;
+}
+#gitimg{
+    height:7vh;
+    width:7vh;
+}
+#nameimg:hover{
+    cursor: pointer;
+}
+#port-section>#s_projects>div>div:last-child{
+    height:100%;
+    width:60%;
+    font-size:1vw;
+}
+
 
 #port-section>#s_contact{
     text-align: center;
