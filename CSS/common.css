@@ -38,8 +38,6 @@ body>div:last-child{
     z-index: 1;
 }
 
-
-
 #port-menu{
     background-color: rgb(25, 30, 35);
     color:rgb(220, 225, 230);
@@ -48,8 +46,8 @@ body>div:last-child{
     width:20%;
     display:flex;
     flex-direction:column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: stretch;
     position: fixed;
 }
 
@@ -70,7 +68,7 @@ body>div:last-child{
     border-radius: 3vw;
 }
 
-#port-menu>div:not(:first-child):hover{
+#port-menu>div:hover{
     cursor:pointer;
     background-color: rgb(55, 60, 65);
     color: rgb(255, 255, 85);
